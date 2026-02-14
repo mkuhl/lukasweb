@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import heroImage from '@/assets/main-img.png'
+import heroImage from '@/assets/main-img-nc.png'
+import cursorGreen from '@/assets/cursor-green.png'
+import cursorRed from '@/assets/cursor-red.png'
 
 const portfolioPdfUrl = '/portfolio.pdf'
 </script>
@@ -12,13 +14,21 @@ const portfolioPdfUrl = '/portfolio.pdf'
         alt=""
         class="h-full w-full [image-rendering:pixelated]"
       />
-      <h1 class="hero-title absolute top-[6.5%] right-[26%]">lukas kuhl</h1>
+
+      <!-- Green: title + cursor -->
+      <div class="absolute top-[7%] right-[13%] flex items-center gap-2 whitespace-nowrap">
+        <h1 class="hero-title">lukas kuhl</h1>
+        <img :src="cursorGreen" alt="" class="h-[min(3vh,3.5vw)] [image-rendering:pixelated]" />
+      </div>
+
+      <!-- Red: cursor + portfolio link -->
       <a
         :href="portfolioPdfUrl"
-        class="btn-portfolio absolute top-[66.5%] left-[58%]"
+        class="absolute top-[67%] left-[51%] flex items-center gap-2 whitespace-nowrap"
         download
       >
-        PORTFOLIO
+        <img :src="cursorRed" alt="" class="h-[min(3vh,3.5vw)] [image-rendering:pixelated]" />
+        <span class="btn-portfolio">PORTFOLIO</span>
       </a>
     </div>
   </div>

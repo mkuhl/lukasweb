@@ -12,6 +12,10 @@
 }
 
 /* Base */
+html {
+  background-color: #07032e;
+}
+
 body {
   @apply text-primary antialiased;
 }

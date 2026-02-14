@@ -6,7 +6,7 @@ const portfolioPdfUrl = '/portfolio.pdf'
 
 <template>
   <div class="min-h-screen bg-[#07032e] flex justify-center">
-    <div class="relative h-screen aspect-[240/294]">
+    <div class="relative w-[min(100vw,calc(100vh*240/294))] h-[min(100vh,calc(100vw*294/240))]">
       <img
         :src="heroImage"
         alt=""

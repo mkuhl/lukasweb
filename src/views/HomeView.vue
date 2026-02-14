@@ -8,11 +8,11 @@ const cvPdfUrl = '/CV_LUKAS_KUHL.pdf'
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#07032e] flex justify-center">
+  <main class="min-h-screen bg-[#07032e] flex justify-center">
     <div class="relative w-[min(100vw,calc(100vh*240/294))] h-[min(100vh,calc(100vw*294/240))]">
       <img
         :src="heroImage"
-        alt=""
+        alt="Thermal camera photograph"
         class="h-full w-full [image-rendering:pixelated]"
       />
 
@@ -21,6 +21,7 @@ const cvPdfUrl = '/CV_LUKAS_KUHL.pdf'
         :href="cvPdfUrl"
         class="absolute top-[7%] right-[13%] flex items-center gap-2 whitespace-nowrap"
         download
+        aria-label="Download CV (PDF)"
       >
         <h1 class="hero-title">lukas kuhl</h1>
         <img :src="cursorGreen" alt="" class="h-[min(3vh,3.5vw)] [image-rendering:pixelated]" />
@@ -31,10 +32,11 @@ const cvPdfUrl = '/CV_LUKAS_KUHL.pdf'
         :href="portfolioPdfUrl"
         class="absolute top-[67%] left-[51%] flex items-center gap-2 whitespace-nowrap"
         download
+        aria-label="Download portfolio (PDF)"
       >
         <img :src="cursorRed" alt="" class="h-[min(3vh,3.5vw)] [image-rendering:pixelated]" />
         <span class="btn-portfolio">portfolio</span>
       </a>
     </div>
-  </div>
+  </main>
 </template>

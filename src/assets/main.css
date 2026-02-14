@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Color Palette — placeholder, will adapt to artist direction */
+  --color-primary: #1a1a1a;
+  --color-secondary: #f5f5f5;
+  --color-accent: #6366f1;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+/* Base */
+body {
+  @apply text-primary antialiased;
+}
+
+/* Reusable component patterns */
+.hero-title {
+  @apply text-5xl md:text-7xl font-display font-bold tracking-tight;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors duration-200 font-medium text-base;
+}
+
+.container-site {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}

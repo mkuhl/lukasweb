@@ -12,10 +12,10 @@ const portfolioPdfUrl = '/portfolio.pdf'
         alt=""
         class="h-full w-full [image-rendering:pixelated]"
       />
-      <h1 class="hero-title absolute top-[7.7%] right-[26%]">lukas kuhl</h1>
+      <h1 class="hero-title absolute top-[6.5%] right-[26%]">lukas kuhl</h1>
       <a
         :href="portfolioPdfUrl"
-        class="btn-portfolio absolute top-[67.5%] left-[58%]"
+        class="btn-portfolio absolute top-[66.5%] left-[58%]"
         download
       >
         PORTFOLIO

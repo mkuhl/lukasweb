@@ -3,7 +3,8 @@ import heroImage from '@/assets/main-img-nc.png'
 import cursorGreen from '@/assets/cursor-green.png'
 import cursorRed from '@/assets/cursor-red.png'
 
-const portfolioPdfUrl = '/portfolio.pdf'
+const portfolioPdfUrl = '/PORTFOLIO_LUKAS_KUHL.pdf'
+const cvPdfUrl = '/CV_LUKAS_KUHL.pdf'
 </script>
 
 <template>
@@ -15,11 +16,15 @@ const portfolioPdfUrl = '/portfolio.pdf'
         class="h-full w-full [image-rendering:pixelated]"
       />
 
-      <!-- Green: title + cursor -->
-      <div class="absolute top-[7%] right-[13%] flex items-center gap-2 whitespace-nowrap">
+      <!-- Green: title + cursor (CV download) -->
+      <a
+        :href="cvPdfUrl"
+        class="absolute top-[7%] right-[13%] flex items-center gap-2 whitespace-nowrap"
+        download
+      >
         <h1 class="hero-title">lukas kuhl</h1>
         <img :src="cursorGreen" alt="" class="h-[min(3vh,3.5vw)] [image-rendering:pixelated]" />
-      </div>
+      </a>
 
       <!-- Red: cursor + portfolio link -->
       <a
@@ -28,7 +33,7 @@ const portfolioPdfUrl = '/portfolio.pdf'
         download
       >
         <img :src="cursorRed" alt="" class="h-[min(3vh,3.5vw)] [image-rendering:pixelated]" />
-        <span class="btn-portfolio">PORTFOLIO</span>
+        <span class="btn-portfolio">portfolio</span>
       </a>
     </div>
   </div>

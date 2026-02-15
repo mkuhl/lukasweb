@@ -3,7 +3,7 @@ import heroImage from '@/assets/main-img-nc.png'
 import cursorGreen from '@/assets/cursor-green.png'
 import cursorRed from '@/assets/cursor-red.png'
 
-const portfolioPdfUrl = '/PORTFOLIO_LUKAS_KUHL.pdf'
+const portfolioPdfUrl = '/Portfolio_complete_300dpi.pdf'
 const cvPdfUrl = '/CV_LUKAS_KUHL.pdf'
 </script>
 
